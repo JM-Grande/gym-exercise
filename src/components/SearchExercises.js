@@ -45,6 +45,7 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
         fontWeight={700}
         sx={{
           fontSize: { lg: "44px", xs: "30px" },
+          color: "text.primary",
         }}
         mb="50px"
         textAlign="center"
@@ -62,7 +63,7 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
               borderRadius: "4px",
             },
             width: { lg: "800px", xs: "350px" },
-            backgroundColor: "#fff",
+            backgroundColor: "background.default",
             borderRadius: "40px",
           }}
           height="76px"
