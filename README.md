@@ -1,7 +1,10 @@
-#Fitness website
+# Fitness website
 - I learn react fetch API
 - Themes
 - Search
+
+# View Website: gym-exercises-fit.netlify.app
+* if can't access try to use proxysite.com then search the URL
 
 
 # Features added
