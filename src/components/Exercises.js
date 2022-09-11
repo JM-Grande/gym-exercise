@@ -51,7 +51,7 @@ const Exercises = ({ exercises, setExercises, bodyPart }) => {
       mt="50px"
       p="20px"
     >
-      <Typography variant="h3" mb="46px">
+      <Typography variant="h3" mb="46px" sx={{ color: "text.primary" }}>
         Showing Results
       </Typography>
 
@@ -66,8 +66,8 @@ const Exercises = ({ exercises, setExercises, bodyPart }) => {
         ))}
 
         {!currentExercises.length ? (
-          <Typography variant="h5">
-            No results please type appropriate exercises
+          <Typography variant="h5" sx={{ color: "text.primary" }}>
+            "No results please type appropriate exercises"
           </Typography>
         ) : (
           ""

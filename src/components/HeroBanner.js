@@ -21,6 +21,7 @@ const HeroBanner = () => {
         fontWeight={700}
         sx={{
           fontSize: { lg: "44px", xs: "40px" },
+          color: "text.primary",
         }}
         mb="23px"
         mt="30px"
@@ -28,7 +29,12 @@ const HeroBanner = () => {
         Sweat, Smile <br /> and Repeat
       </Typography>
 
-      <Typography fontSize="22px" lineHeight="35px" mb={4}>
+      <Typography
+        fontSize="22px"
+        lineHeight="35px"
+        mb={4}
+        sx={{ color: "text.primary" }}
+      >
         Check out the most effective exercises
       </Typography>
 
@@ -47,6 +53,7 @@ const HeroBanner = () => {
         sx={{
           opacity: 0.1,
           display: { lg: "block", xs: "none" },
+          color: "text.secondary",
         }}
         fontSize="200px"
       >

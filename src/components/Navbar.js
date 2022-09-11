@@ -3,8 +3,11 @@ import { Link } from "react-router-dom";
 import { Stack } from "@mui/material";
 
 import Logo from "../assets/images/Logo.png";
+import { IconButton } from "@mui/material";
+import NightlightIcon from "@mui/icons-material/Nightlight";
+import LightModeIcon from "@mui/icons-material/LightMode";
 
-const Navbar = () => {
+const Navbar = ({ mode, setMode }) => {
   return (
     <Stack
       direction="row"
@@ -28,15 +31,26 @@ const Navbar = () => {
           to="/"
           style={{
             textDecoration: "none",
-            color: "#3A1212",
             borderBottom: "3px solid #FF2625",
+            color: "text.primary",
           }}
         >
           Home
         </Link>
 
-        <a style={{ textDecoration: "none", color: "#3A1212" }}>Exercises</a>
+        <Link to="/" style={{ textDecoration: "none", color: "text.primary" }}>
+          Exercises
+        </Link>
       </Stack>
+
+      {/* DarkMode Button */}
+      <IconButton
+        onClick={() => {
+          setMode(mode === "light" ? "dark" : "light");
+        }}
+      >
+        {mode === "light" ? <NightlightIcon /> : <LightModeIcon />}
+      </IconButton>
     </Stack>
   );
 };
