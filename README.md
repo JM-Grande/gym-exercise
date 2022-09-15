@@ -1,4 +1,5 @@
 # Fitness website
+Credit: https://github.com/adrianhajdin/project_fitness_app
 - I learn react fetch API
 - Themes
 - Search
